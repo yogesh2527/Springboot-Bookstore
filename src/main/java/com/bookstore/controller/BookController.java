@@ -22,6 +22,7 @@ public class BookController {
 
 	@RequestMapping("/bookForm")
 	public String displayBookForm(Model model) {
+		System.out.println("Display Book");
 		Book b = new Book();
 		model.addAttribute("b", b);
 		return "storeBook";
